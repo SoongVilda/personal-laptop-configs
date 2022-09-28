@@ -7,7 +7,7 @@ sudo ./cachyos-repo.sh
 ```
 ## 1.1 performance tweaks
 ```
-sudo pacman -S --needed cachyos-settings linux-cachyos-bore linux-cachyos-bore-headers
+sudo pacman -S --needed cachyos-settings linux-cachyos linux-cachyos-headers
 ```
 
 # 2. Intel Xe GPU drivers & Vulkan
