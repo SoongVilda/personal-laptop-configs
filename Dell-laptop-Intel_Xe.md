@@ -38,3 +38,15 @@ sudo pacman -S --needed plasma kde-graphics kde-multimedia kde-utilities
 ```
 sudo pacman -S --needed kate
 ```
+
+# 5 Intel GPU
+[Enable GuC / HuC firmware loading](https://wiki.archlinux.org/title/intel_graphics#Enable_GuC_/_HuC_firmware_loading)
+```
+sudo nano /etc/modprobe.d/i915.conf
+```
+Older Intel CPUs should use `options i915 enable_guc=2`
+```
+options i915 enable_guc=3
+options i915 enable_fbc=1
+options i915 fastboot=1
+```
