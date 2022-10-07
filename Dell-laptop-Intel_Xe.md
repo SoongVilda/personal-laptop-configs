@@ -1,4 +1,4 @@
-# 1. cachyos x86-64-v3 repositories
+# 1. CachyOS x86-64-v3 repositories
 ```
 wget https://mirror.cachyos.org/cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz
