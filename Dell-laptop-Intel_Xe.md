@@ -1,8 +1,7 @@
 # 1. CachyOS x86-64-v3 repositories
 ```
 wget https://mirror.cachyos.org/cachyos-repo.tar.xz
-tar xvf cachyos-repo.tar.xz
-cd cachyos-repo
+tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 ```
 ## 1.1 performance tweaks
@@ -10,16 +9,13 @@ sudo ./cachyos-repo.sh
 sudo pacman -S --needed cachyos-settings linux-cachyos linux-cachyos-headers
 ```
 
-# 2. Intel Xe GPU drivers & Vulkan
+# 2. Intel(R) Xe Graphics (TGL GT2) drivers & Vulkan
 ```
 sudo pacman -S --needed intel-ucode vulkan-intel intel-compute-runtime intel-gmmlib intel-gpu-tools intel-graphics-compiler intel-media-driver intel-media-sdk libmfx libva-utils lib32-vulkan-intel glu libva-mesa-driver mesa mesa-demos mesa-utils mesa-vdpau vulkan-mesa-layers lib32-glu lib32-libva-mesa-driver lib32-mesa lib32-mesa-demos lib32-mesa-utils lib32-mesa-vdpau lib32-vulkan-mesa-layers vulkan-icd-loader vulkan-extra-layers vulkan-extra-tools vulkan-headers thermald
 ```
-## 2.1 Enable thermald
+## 2.1 Enable a thermald to start automatically at boot and start it immediately
 ```
-sudo systemctl enable thermald
-```
-```
-sudo systemctl start thermald
+sudo systemctl enable --now thermald
 ```
 # 3. Wine and dependencies, goddies for Steam + Proton.
 ```
