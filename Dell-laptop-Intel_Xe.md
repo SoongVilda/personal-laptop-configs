@@ -43,7 +43,7 @@ sudo pacman -S --needed kate
 ```
 sudo nano /etc/modprobe.d/i915.conf
 ```
-Older Intel CPUs should use `options i915 enable_guc=2`
+Older Intel CPUs should use `options i915 enable_guc=2`.
 ```
 options i915 enable_guc=3
 options i915 enable_fbc=1
