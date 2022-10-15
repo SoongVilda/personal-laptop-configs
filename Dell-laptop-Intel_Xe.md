@@ -49,3 +49,8 @@ options i915 enable_guc=3
 options i915 enable_fbc=1
 options i915 fastboot=1
 ```
+
+# automatic screen rotation 
+```
+sudo pacman -S --needed iio-sensor-proxy
+```
