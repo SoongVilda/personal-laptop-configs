@@ -17,6 +17,10 @@ sudo pacman -S --needed intel-ucode vulkan-intel intel-compute-runtime intel-gmm
 ```
 sudo systemctl enable --now thermald
 ```
+## If you have 11 gen (tigerlake) or newer
+```
+paru -S onevpl-intel-gpu
+```
 That's everything for Intel GPU configuration.
 ---
 
