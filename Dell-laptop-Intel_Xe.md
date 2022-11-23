@@ -19,7 +19,7 @@ sudo systemctl enable --now thermald
 ```
 ## If you have 11 gen (tigerlake) or newer
 ```
-paru -S onevpl-intel-gpu
+paru -S onevpl-intel-gpu onevpl
 ```
 That's everything for Intel GPU configuration.
 ---
