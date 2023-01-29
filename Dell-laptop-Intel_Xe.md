@@ -11,7 +11,7 @@ sudo pacman -S --needed cachyos-settings linux-cachyos linux-cachyos-headers
 
 # 2. Intel GPU drivers & Vulkan
 ```
-sudo pacman -S --needed intel-ucode vulkan-intel intel-compute-runtime intel-gmmlib intel-gpu-tools intel-graphics-compiler intel-media-driver intel-media-sdk libmfx libva-utils lib32-vulkan-intel glu libva-mesa-driver mesa mesa-demos mesa-utils mesa-vdpau vulkan-mesa-layers lib32-glu lib32-libva-mesa-driver lib32-mesa lib32-mesa-demos lib32-mesa-utils lib32-mesa-vdpau lib32-vulkan-mesa-layers vulkan-icd-loader vulkan-extra-layers vulkan-extra-tools vulkan-headers thermald
+sudo pacman -S --needed intel-ucode vulkan-intel intel-compute-runtime intel-gmmlib intel-gpu-tools intel-graphics-compiler intel-media-driver intel-media-sdk libmfx libva-utils lib32-vulkan-intel glu mesa mesa-demos mesa-utils mesa-vdpau vulkan-mesa-layers lib32-glu lib32-mesa lib32-mesa-demos lib32-mesa-utils lib32-mesa-vdpau lib32-vulkan-mesa-layers vulkan-icd-loader vulkan-extra-layers vulkan-extra-tools vulkan-headers thermald
 ```
 ## 2.1 Enable a thermald to start automatically at boot and start it immediately
 ```
@@ -57,4 +57,8 @@ options i915 fastboot=1
 # Automatic screen rotation 
 ```
 sudo pacman -S --needed iio-sensor-proxy
+```
+# Gaming 
+```
+sudo pacman -S --needed cachyos-gaming-meta
 ```
